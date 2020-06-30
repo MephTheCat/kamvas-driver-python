@@ -1,0 +1,9 @@
+Thank you to the following people for helping me write this driver.
+
+Jose Luis Cruz
+	For the huion-linux-drivers project, which helped inform me on how to talk to the tablet using libusb.
+	https://github.com/joseluis/huion-linux-drivers
+
+The DIGImend project (and, by proxy, Jose Luis Cruz)
+	Through Jose's project, I was linked to this project for information on the tablet's packet structure.
+	https://github.com/DIGImend/digimend-kernel-drivers
