@@ -23,6 +23,17 @@ This driver relies on the following packages:
 Debian users may use the following:  
 `sudo apt install python3-libevdev python3-usb`
 
+
+An additional file at `/usr/share/X11/xorg.conf.d/50-tablet.conf` may also be necessary.
+```
+Section "InputClass"
+        Identifier "evdev tablet catchall"
+        MatchIsTablet "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "evdev"
+EndSection
+```
+
 # How to manually configure the driver for your tablet
 The file, `config.py`, contains the configuation for your tablet.  It supports multiple tablet profiles.  Simply create another dictionary with the requisite keys and populate as necessary.  Be sure to reassign the `working_tablet` variable to your new dictionary.
 <br/>
